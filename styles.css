@@ -174,3 +174,18 @@ body {
     color: white;
     border-color: var(--accent);
 }
+
+/* Ensure block-level content inside cards stacks normally */
+.card h2 {
+    display: block;
+    margin-bottom: .35rem;
+}
+
+.card p,
+.card ul,
+.card ol,
+.card pre,
+.card blockquote {
+    margin: .5rem 0;
+    display: block;
+}

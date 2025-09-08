@@ -10,6 +10,7 @@ Short summary about yourself.
 ## Experience
 - **Senior Engineer**, Company — 2022–Present  
   Did cool things.
+  I did so many cool things.
 
 - **Engineer**, Other Company — 2019–2022  
   Did other cool things.
