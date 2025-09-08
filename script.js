@@ -1,4 +1,4 @@
-// script.js — robust CV renderer with empty-card fix
+// script.js — CV renderer with plain text contacts
 (async function () {
     const log = (...args) => console.debug('[cv-render]', ...args);
 
@@ -82,19 +82,12 @@
         const loc = items.find(x => /location:/i.test(x) || /based/i.test(x));
 
         if (email) {
-            const a = document.getElementById('email');
-            if (a) { a.href = 'mailto:' + email; a.textContent = email; }
-        }
-        if (website) {
-            const w = document.getElementById('website');
-            if (w) {
-                try { w.href = website; w.textContent = new URL(website).host; }
-                catch (e) { w.href = website; w.textContent = website; }
-            }
+            const span = document.getElementById('email');
+            if (span) span.textContent = email;
         }
         if (loc) {
-            const l = document.getElementById('location');
-            if (l) { l.href = '#'; l.textContent = loc.replace(/^[Ll]ocation:\s*/, '').trim(); }
+            const span = document.getElementById('location');
+            if (span) span.textContent = loc.replace(/^[Ll]ocation:\s*/, '').trim();
         }
 
         // avatar: if img present
@@ -150,19 +143,18 @@
                 h2.id = slug;
 
                 const section = document.createElement('section');
-                section.className = 'card' + (/(projects|portfolio|featured)/i.test(h2.textContent) ? ' card--wide' : '');
+                section.className = 'card' + (/(projects|summary|experience)/i.test(h2.textContent) ? ' card--wide' : '');
                 section.appendChild(h2);
 
                 // move siblings until next H2
                 while (tmp.firstChild && tmp.firstChild.tagName !== 'H2') {
-                    // skip stray whitespace again
                     if (tmp.firstChild.nodeType === 3 && !tmp.firstChild.textContent.trim()) {
                         tmp.removeChild(tmp.firstChild);
                         continue;
                     }
                     section.appendChild(tmp.firstChild);
                 }
-                if (section.children.length > 1) { // only append if not empty
+                if (section.children.length > 1) {
                     content.appendChild(section);
                 }
 
@@ -173,7 +165,6 @@
                     toc.appendChild(link);
                 }
             } else {
-                // only append non-empty elements
                 if (tmp.firstChild.nodeType === 1 && tmp.firstChild.textContent.trim() !== '') {
                     const s = document.createElement('section');
                     s.className = 'card card--wide';

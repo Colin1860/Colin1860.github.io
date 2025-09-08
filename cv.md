@@ -1,8 +1,8 @@
 # Colin Mikolajczak
-- you@example.com
+- (firstname)(lastname)@gmail.com
 - https://yourdomain.com
-- Location: City, Country
-- ![Your face](assets/avatar.jpg)
+- Location: Munich, Germany
+- ![Me](assets/avatar.jpg)
 
 ## Summary
 Short summary about yourself.
@@ -25,9 +25,10 @@ Short summary about yourself.
 ## Skills
 
 ### Languages
-- JavaScript
-- TypeScript
+- Rust
+- Go
 - Python
+- C/C++
 
 ### Frameworks
 - React
@@ -40,4 +41,6 @@ Short summary about yourself.
 - GitHub Actions
 
 ## Education
-- **B.Sc. Computer Science**, University — 2013–2017
+- **B.Sc. Computer Science**, Munich University of Applied Sciences — 2018–2022
+### Specialisation: Embedded and Real Time Systems
+- **Thesis**: Evaluation and Improvement of a Rust based Embedded Operating System; Grade: 1.0
