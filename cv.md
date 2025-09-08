@@ -22,7 +22,21 @@ Short summary about yourself.
   Starred project.
 
 ## Skills
-`JavaScript, React, Node.js, AWS, Docker, Git`
+
+### Languages
+- JavaScript
+- TypeScript
+- Python
+
+### Frameworks
+- React
+- Next.js
+- Node.js
+
+### Cloud & DevOps
+- AWS
+- Docker
+- GitHub Actions
 
 ## Education
 - **B.Sc. Computer Science**, University — 2013–2017
