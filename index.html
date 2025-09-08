@@ -1,3 +1,39 @@
-Hello I'm Colin and this is my blog.
+<!doctype html>
+<html lang="en">
 
-I hope you'll find something interesting here.
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ NAME }} — CV</title>
+    <meta name="description" content="Curriculum vitae of {{ NAME }}">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="site-header container">
+        <div class="id-block">
+            <img id="avatar" alt="" class="avatar" />
+            <div>
+                <h1 id="name">{{ NAME }}</h1>
+                <p id="tagline" class="muted">{{ TAGLINE }}</p>
+                <p class="contacts">
+                    <a id="email" href="#">email@example.com</a>
+                    <span class="dot">•</span>
+                    <a id="website" href="#" target="_blank">website</a>
+                    <span class="dot">•</span>
+                    <a id="location" href="#" target="_blank">location</a>
+                </p>
+            </div>
+        </div>
+        <nav class="toc"></nav>
+    </header>
+
+    <main id="content" class="container card-grid"></main>
+
+    <footer class="container site-footer">
+        <small>© <span id="year"></span> {{ NAME }} · Built with GitHub Pages</small>
+    </footer>
+</body>
+
+</html>
