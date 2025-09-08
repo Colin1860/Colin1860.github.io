@@ -1,4 +1,4 @@
-# Your Name
+# Colin Mikolajczak
 - you@example.com
 - https://yourdomain.com
 - Location: City, Country
