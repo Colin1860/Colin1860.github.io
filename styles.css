@@ -7,12 +7,14 @@
     --border: #e7ecf4;
     --radius: 14px;
     --maxw: 980px;
+    --shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 body {
     background: var(--bg);
     color: var(--text);
-    font: 16px/1.6 system-ui
+    font: 16px/1.6 system-ui;
+    margin: 0
 }
 
 .container {
@@ -51,7 +53,28 @@ body {
     border-radius: 50%
 }
 
-/* --- Skills badges --- */
+/* Floating PDF Download button */
+.pdf-button {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: .55rem 1rem;
+    font-size: .95rem;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+    transition: background .2s;
+}
+
+.pdf-button:hover {
+    background: color-mix(in oklab, var(--accent), black 15%);
+}
+
+/* Skills badges */
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
@@ -82,4 +105,47 @@ body {
     font-size: 1rem;
     color: var(--muted);
     font-weight: 600;
+}
+
+/* Hidden header for PDF/print */
+.print-header {
+    display: none;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: .75rem;
+}
+
+.print-header h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.print-header p {
+    margin: .3rem 0 0;
+    font-size: .95rem;
+    color: #444;
+}
+
+/* Print rules */
+@media print {
+    body {
+        font-size: 12pt;
+    }
+
+    .print-header {
+        display: block;
+    }
+
+    header.site-header,
+    .pdf-button,
+    .toc {
+        display: none !important;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
 }
