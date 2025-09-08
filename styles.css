@@ -149,3 +149,28 @@ body {
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
 }
+
+/* TOC nav links */
+.toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+.toc a {
+    display: inline-block;
+    padding: .25rem .6rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: .85rem;
+    color: var(--muted);
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.toc a:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}

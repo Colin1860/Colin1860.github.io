@@ -124,10 +124,10 @@
     const h2s = [...tmp.querySelectorAll('h2')];
 
     if (h2s.length === 0) {
-        // if no H2s, just append everything in a single wide card
+        // fallback: put all remaining HTML into one card
         const s = document.createElement('section');
         s.className = 'card card--wide';
-        s.append(...tmp.childNodes);
+        s.innerHTML = tmp.innerHTML;
         if (content) content.appendChild(s);
     } else {
         h2s.forEach((h2) => {
@@ -137,7 +137,6 @@
             section.className = 'card' + (/(projects|portfolio|featured)/i.test(h2.textContent) ? ' card--wide' : '');
             section.appendChild(h2);
 
-            // move siblings until next H2
             let el = h2.nextSibling;
             while (el && !(el.tagName && el.tagName.toLowerCase() === 'h2')) {
                 const next = el.nextSibling;
@@ -146,7 +145,6 @@
             }
             if (content) content.appendChild(section);
 
-            // TOC pill
             if (toc) {
                 const link = document.createElement('a');
                 link.href = '#' + slug;
@@ -155,6 +153,7 @@
             }
         });
     }
+
 
     // --- 5) Enhance Skills section into grouped badge grids ---
     document.querySelectorAll('section').forEach(section => {
