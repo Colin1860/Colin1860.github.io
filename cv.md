@@ -5,7 +5,7 @@
 - ![Me](assets/avatar.jpg)
 
 ## Summary
-Passionate engineer with 5+ years plus experience building non-trivial software and sensor systems. Currently, my special interests are focused on WebAssembly in constrained environments, fingerprinting and pattern matching algorithms, as well as localization techniques. 
+Passionate engineer with 5+ years experience building non-trivial software and sensor systems. Currently, my special interests are focused on WebAssembly in constrained environments, fingerprinting and pattern matching algorithms, as well as localization techniques. 
 
 When I am not building something, I enjoy cooking, being outside or practicing Brazilian Jiu Jitsu.
 
@@ -16,7 +16,7 @@ When I am not building something, I enjoy cooking, being outside or practicing B
 
     _February 2024 - present_
 
-  At Helsing, I am the longest tenured software engineer of the entire Electronic Warfare domain. I either built up or was part of building up every core software product needed in this domain. This ranges from domain specific databases to simulators used for synthetic data generation for training of AI models.
+  At Helsing, I am the longest tenured software engineer of the entire Electronic Warfare domain. I have either built up or was part of building up every core software product needed in this domain. This ranges from domain specific databases to simulators used for synthetic data generation for training of AI models.
 
   After half a year as an IC, I was tasked with building up a team for the development of a [real-time electronic support measures system](https://helsing.ai/de/cirra). Within the scope of this task, I'm growing a team from originally 4 members to 12, all while designing the fundamental solution for this product, ranging from algorithmic advancements, highly concurrent design of the core system and enabling an organisation of 40+ people to contribute seamlessly to this codebase.
 
@@ -92,7 +92,7 @@ When I am not building something, I enjoy cooking, being outside or practicing B
 ## Projects
 
 - **Sguaba - hard-to-misuse rigid body transforms** — https://github.com/helsing-ai/sguaba  
-  This is an open source library that I helped stabilize and rollout and internally, and now I help with maintianing it. It's main purpose is to cleverly utilize Rust's type system so that rigid body transforms (eg, from one coordinate system into another) are harder to get wrong.
+  This is an open source library that I helped stabilize and rollout internally, and now I help with maintaining it. It's main purpose is to cleverly utilize Rust's type system so that rigid body transforms (eg, from one coordinate system into another) are harder to get wrong.
 
 - **Gossip Glomers - Distributed systems challenge** - https://github.com/Colin1860/gossip-glomers
   My take on challenge 6 of the distributed systems challenge from fly.io. In this challenge I built a totally available, [read-commited](https://jepsen.io/consistency/models/read-committed) distributed key value store in Rust.
