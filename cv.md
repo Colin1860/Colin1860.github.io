@@ -1,16 +1,26 @@
 # Colin Mikolajczak
-- (firstname)(lastname)@gmail.com
+- myfirstandlastname@gmail.com
 - https://yourdomain.com
 - Location: Munich, Germany
 - ![Me](assets/avatar.jpg)
 
 ## Summary
-Short summary about yourself.
+Passionate engineer with 5+ years plus experience building non-trivial software and sensor systems. Currently, my special interests are focused on WebAssembly in constrained environments, fingerprinting and pattern matching algorithms, as well as localization techniques. 
+
+When I am not building something, I enjoy cooking, being outside or practicing Brazilian Jiu Jitsu.
 
 ## Experience
-- **Lead Software Engineer**, Helsing GmbH — 2022–Present  
-  Did cool things.
-  I did so many cool things.
+- **Lead Software Engineer**, Helsing GmbH
+
+    _Munich, Germany_
+
+    _February 2024 - present_
+
+  At Helsing, I am the longest tenured software engineer of the entire Electronic Warfare domain. I either built up or was part of building up every core software product needed in this domain. This ranges from domain specific databases to simulators used for synthetic data generation for training of AI models.
+
+  After half a year as an IC, I was tasked with building up a team for the development of a [real-time electronic support measures system](https://helsing.ai/de/cirra). Within the scope of this task, I'm growing a team from originally 4 members to 12, all while designing the fundamental solution for this product, ranging from algorithmic advancements, highly concurrent design of the core system and enabling an organisation of 40+ people to contribute seamlessly to this codebase.
+
+  Additionally, I'm an engineering manager for 3 engineers and I'm responsible for parts of our company wide onboarding process for engineers.
 
 - **Embedded Software Engineer**, Zenseact AB
 
@@ -80,11 +90,12 @@ Short summary about yourself.
     A feature to export settings of the user to a storage device, which then can be applied on other configurations (different desk or lamp).
 
 ## Projects
-- **My Portfolio** — https://yourdomain.com  
-  Personal site.
 
-- **Open Source Library** — https://github.com/you/lib  
-  Starred project.
+- **Sguaba - hard-to-misuse rigid body transforms** — https://github.com/helsing-ai/sguaba  
+  This is an open source library that I helped stabilize and rollout and internally, and now I help with maintianing it. It's main purpose is to cleverly utilize Rust's type system so that rigid body transforms (eg, from one coordinate system into another) are harder to get wrong.
+
+- **Gossip Glomers - Distributed systems challenge** - https://github.com/Colin1860/gossip-glomers
+  My take on challenge 6 of the distributed systems challenge from fly.io. In this challenge I built a totally available, [read-commited](https://jepsen.io/consistency/models/read-committed) distributed key value store in Rust.
 
 ## Skills
 
@@ -96,12 +107,16 @@ Short summary about yourself.
 
 ### Technologies
 - NVIDIA CUDA
+- TensorRT
 - Apache Datafusion & Parquet
-
+- ONNX Runtime
+- WebAssembly
+- ARM Cortex-M
 
 ### Domains
 - Electronic Warfare
 - Real time systems
+- Concurrent and Distributed Systems
 - Embedded Systems
 - Linux and Unix systems
 
