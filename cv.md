@@ -10,7 +10,7 @@ Passionate engineer with 6+ years experience building non-trivial software for s
 When I am not building something, I enjoy cooking, being outside or practicing Brazilian Jiu Jitsu.
 
 ## Experience
-- **Lead Software Engineer**, Helsing GmbH
+- **Staff Software Engineer**, Helsing GmbH
 
     _Munich, Germany_
 
