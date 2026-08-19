@@ -5,7 +5,7 @@
 - ![Me](assets/avatar.jpg)
 
 ## Summary
-Passionate engineer with 5+ years experience building non-trivial software and sensor systems. Currently, my special interests are focused on WebAssembly in constrained environments, fingerprinting and pattern matching algorithms, as well as localization techniques. 
+Passionate engineer with 6+ years experience building non-trivial software for sensor systems. Currently, my special interests are focused on WebAssembly in constrained environments, fingerprinting and pattern matching algorithms, as well as localization techniques. 
 
 When I am not building something, I enjoy cooking, being outside or practicing Brazilian Jiu Jitsu.
 
@@ -16,11 +16,11 @@ When I am not building something, I enjoy cooking, being outside or practicing B
 
     _February 2024 - present_
 
-  At Helsing, I am the longest tenured software engineer of the entire Electronic Warfare domain. I have either built up or was part of building up every core software product needed in this domain. This ranges from domain specific databases to simulators used for synthetic data generation for training of AI models.
+  At Helsing, I am the longest tenured software engineer of the entire Electronic Warfare domain. I have either built up or was part of building up every core software product needed in this domain. This ranges from domain specific databases to simulators used for synthetic data generation to enable training of AI models.
 
-  After half a year as an IC, I was tasked with building up a team for the development of a [real-time electronic support measures system](https://helsing.ai/de/cirra). Within the scope of this task, I'm growing a team from originally 4 members to 12, all while designing the fundamental solution for this product, ranging from algorithmic advancements, highly concurrent design of the core system and enabling an organisation of 40+ people to contribute seamlessly to this codebase.
+  After half a year as an IC, I was tasked with building up a team for the development of a [real-time electronic support measures system](https://helsing.ai/de/cirra). Within the scope of this task, I'm growing a team from originally 4 members to 20+, all while designing the fundamental solution for this product, ranging from algorithmic advancements, highly concurrent design of the core system and enabling an organisation of 40+ people to contribute seamlessly to this codebase.
 
-  Additionally, I'm an engineering manager for 3 engineers and I'm responsible for parts of our company wide onboarding process for engineers.
+  Additionally, I'm an engineering manager for 5 engineers, responsible for parts of our company wide onboarding process for engineers and I am working on defining internal coding standards for our safety critical usage of Rust as I also represent Helsing at the [safety critical rust consortium](https://rustfoundation.org/safety-critical-rust-consortium/).
 
 - **Embedded Software Engineer**, Zenseact AB
 
