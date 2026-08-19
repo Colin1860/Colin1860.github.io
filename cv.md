@@ -97,6 +97,9 @@ When I am not building something, I enjoy cooking, being outside or practicing B
 - **Gossip Glomers - Distributed systems challenge** - https://github.com/Colin1860/gossip-glomers
   My take on challenge 6 of the distributed systems challenge from fly.io. In this challenge I built a totally available, [read-commited](https://jepsen.io/consistency/models/read-committed) distributed key value store in Rust.
 
+- **rustytorch - PyTorch clone in Rust** - https://github.com/Colin1860/rustytorch
+  This is a minimal clone of [PyTorch](https://pytorch.org/) built from scratch, mostly education focused. The end goal is to be able to build every major breakthrough model in ML with this framework, while being focused on the engineering heavy sides of ML/AI.
+
 ## Skills
 
 ### Languages
